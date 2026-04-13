@@ -19,11 +19,9 @@ This project demonstrates key Temporal features:
 
 ## Quick Start
 
-### 1. Clone and Build
+### 1. Build
 
 ```bash
-git clone <repo-url>
-cd temporal_prep
 mvn clean install
 ```
 
@@ -39,7 +37,11 @@ This starts:
 - **PostgreSQL 15** (Temporal database backend)
 - **Ollama 7B Mistral** on http://localhost:11434 (LLM)
 
-Wait ~10 seconds for services to stabilize.
+Ollama will have to pull the Mistral model when it first starts up. This will take several minutes. You will know it's ready when you see:
+
+```
+✓ Mistral model ready!
+```
 
 ### 3. Run the Workflow
 
@@ -52,6 +54,8 @@ Or with custom parameters:
 ```bash
 ./run.sh 6 8    # 6 characters, level 8
 ```
+
+It will take around 30 seconds to generate the encounter.
 
 Example output:
 ```
