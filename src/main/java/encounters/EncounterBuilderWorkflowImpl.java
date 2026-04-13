@@ -37,7 +37,7 @@ public class EncounterBuilderWorkflowImpl implements EncounterBuilderWorkflow {
     private final GenerateDescriptionActivity descriptionActivity = Workflow.newActivityStub(
         GenerateDescriptionActivity.class,
         ActivityOptions.newBuilder()
-            .setStartToCloseTimeout(Duration.ofSeconds(300))
+            .setStartToCloseTimeout(Duration.ofSeconds(90))
             .setRetryOptions(
                 RetryOptions.newBuilder()
                     .setMaximumAttempts(5)

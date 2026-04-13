@@ -73,7 +73,7 @@ public class Main implements Runnable {
                 EncounterBuilderWorkflow.class,
                 WorkflowOptions.newBuilder()
                     .setTaskQueue(TASK_QUEUE)
-                    .setWorkflowId("encounter-builder-" + UUID.randomUUID())
+                    .setWorkflowId("encounter-builder")
 
                     .build()
             );
