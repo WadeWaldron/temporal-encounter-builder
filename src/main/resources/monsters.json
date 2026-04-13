@@ -1,0 +1,804 @@
+{
+  "creatures": [
+    {
+      "name": "Goblin",
+      "cr": 0.25,
+      "xp": 50,
+      "type": "Humanoid",
+      "size": "Small",
+      "summary": "Small goblinoid creature, often found in caves or ruins. Goblins are cowardly but cunning, preferring to ambush prey."
+    },
+    {
+      "name": "Kobold",
+      "cr": 0.125,
+      "xp": 25,
+      "type": "Humanoid",
+      "size": "Small",
+      "summary": "Reptilian humanoid with a draconic bent. Kobolds are tribal and highly organized, known for setting traps."
+    },
+    {
+      "name": "Orc",
+      "cr": 0.5,
+      "xp": 100,
+      "type": "Humanoid",
+      "size": "Large",
+      "summary": "Fierce warrior with green skin and tusks. Orcs are proud and aggressive, favoring melee combat."
+    },
+    {
+      "name": "Skeleton",
+      "cr": 0.125,
+      "xp": 25,
+      "type": "Undead",
+      "size": "Medium",
+      "summary": "Animated bones held together by dark magic. Skeletons are mindless servants of necromancers."
+    },
+    {
+      "name": "Zombie",
+      "cr": 0.125,
+      "xp": 25,
+      "type": "Undead",
+      "size": "Medium",
+      "summary": "Shambling corpse reanimated by necrotic magic. Slow but relentless, immune to fear."
+    },
+    {
+      "name": "Ghoul",
+      "cr": 1,
+      "xp": 200,
+      "type": "Undead",
+      "size": "Medium",
+      "summary": "Undead creature that feeds on corpses. Frightfully intelligent and creates more ghouls with its bite."
+    },
+    {
+      "name": "Hobgoblin",
+      "cr": 0.5,
+      "xp": 100,
+      "type": "Humanoid",
+      "size": "Medium",
+      "summary": "Disciplined warrior with gray skin, more organized and tactical than their goblin cousins."
+    },
+    {
+      "name": "Bandit",
+      "cr": 0.125,
+      "xp": 25,
+      "type": "Humanoid",
+      "size": "Medium",
+      "summary": "Seasoned criminal who lives by stealing and violence. Often found in roving bands."
+    },
+    {
+      "name": "Guard",
+      "cr": 0.125,
+      "xp": 25,
+      "type": "Humanoid",
+      "size": "Medium",
+      "summary": "Trained warrior serving a lord or organization. Well-equipped and disciplined."
+    },
+    {
+      "name": "Wyvern",
+      "cr": 6,
+      "xp": 2300,
+      "type": "Dragon",
+      "size": "Large",
+      "summary": "Two-legged draconic creature with a venomous tail. Territorial and intelligent, found in mountain lairs."
+    },
+    {
+      "name": "Young Red Dragon",
+      "cr": 10,
+      "xp": 5900,
+      "type": "Dragon",
+      "size": "Large",
+      "summary": "Immature red dragon with arrogant personality. Breathes fire and commands respect through fear."
+    },
+    {
+      "name": "Adult Red Dragon",
+      "cr": 17,
+      "xp": 18000,
+      "type": "Dragon",
+      "size": "Huge",
+      "summary": "Eldest of red dragons, a tyrant of flame and devastation. Legendary in scale and power."
+    },
+    {
+      "name": "Blue Dragon Wyrmling",
+      "cr": 3,
+      "xp": 700,
+      "type": "Dragon",
+      "size": "Medium",
+      "summary": "Newborn blue dragon with arrogant demeanor. Breathes lightning and seeks to dominate."
+    },
+    {
+      "name": "Green Dragon Wyrmling",
+      "cr": 2,
+      "xp": 450,
+      "type": "Dragon",
+      "size": "Medium",
+      "summary": "Young green dragon, a cunning manipulator and lover of intrigue. Breathes poison."
+    },
+    {
+      "name": "White Dragon Wyrmling",
+      "cr": 2,
+      "xp": 450,
+      "type": "Dragon",
+      "size": "Medium",
+      "summary": "Young white dragon, least intelligent of its kind. Breathes cold and dwells in icy wastelands."
+    },
+    {
+      "name": "Beholder",
+      "cr": 13,
+      "xp": 10000,
+      "type": "Aberration",
+      "size": "Medium",
+      "summary": "Spherical creature with many magical eye-stalks. Paranoid and arrogant tyrant of the Underdark."
+    },
+    {
+      "name": "Lich",
+      "cr": 21,
+      "xp": 33000,
+      "type": "Undead",
+      "size": "Medium",
+      "summary": "Powerful wizard who achieved immortality through dark magic and the use of a phylactery."
+    },
+    {
+      "name": "Vampire",
+      "cr": 13,
+      "xp": 10000,
+      "type": "Undead",
+      "size": "Medium",
+      "summary": "UndeadAristorat who feeds on blood. Regenerates wounds and hypnotizes prey."
+    },
+    {
+      "name": "Ghost",
+      "cr": 4,
+      "xp": 1100,
+      "type": "Undead",
+      "size": "Medium",
+      "summary": "Spirit of a deceased humanoid unable to rest. Ethereal and can possess the living."
+    },
+    {
+      "name": "Wraith",
+      "cr": 5,
+      "xp": 1800,
+      "type": "Undead",
+      "size": "Medium",
+      "summary": "Wraith-like undead creature born from malice. Drains life force with a single touch."
+    },
+    {
+      "name": "Mummy",
+      "cr": 3,
+      "xp": 700,
+      "type": "Undead",
+      "size": "Medium",
+      "summary": "Preserved corpse wrapped in burial shrouds. Guarded tombs for centuries, radiates curse."
+    },
+    {
+      "name": "Demon (Balrog-like)",
+      "cr": 9,
+      "xp": 5000,
+      "type": "Fiend",
+      "size": "Large",
+      "summary": "Towering demonic entity wreathed in flame. Embodies fury and destruction."
+    },
+    {
+      "name": "Devil (Pit Fiend)",
+      "cr": 20,
+      "xp": 25000,
+      "type": "Fiend",
+      "size": "Large",
+      "summary": "Infernal aristocrat commanding legions of lesser devils. Master of deception and binding."
+    },
+    {
+      "name": "Imp",
+      "cr": 1,
+      "xp": 200,
+      "type": "Fiend",
+      "size": "Tiny",
+      "summary": "Small demonic servant bound in service for centuries. Loyal yet mischievous familiar."
+    },
+    {
+      "name": "Succubus",
+      "cr": 4,
+      "xp": 1100,
+      "type": "Fiend",
+      "size": "Medium",
+      "summary": "Seductive demoness who drains essence through charm and deception."
+    },
+    {
+      "name": "Giant Spider",
+      "cr": 1,
+      "xp": 200,
+      "type": "Beast",
+      "size": "Large",
+      "summary": "Enormous arachnid with venomous bite. Dwells in dark caverns and webs."
+    },
+    {
+      "name": "Manticore",
+      "cr": 3,
+      "xp": 700,
+      "type": "Monstrosity",
+      "size": "Large",
+      "summary": "Lion-bodied creature with human head and scorpion tail. Aggressive hunter."
+    },
+    {
+      "name": "Basilisk",
+      "cr": 3,
+      "xp": 700,
+      "type": "Monstrosity",
+      "size": "Medium",
+      "summary": "Reptilian creature whose gaze can turn victims to stone. Lethal predator of the Underdark."
+    },
+    {
+      "name": "Medusa",
+      "cr": 6,
+      "xp": 2300,
+      "type": "Monstrosity",
+      "size": "Medium",
+      "summary": "Cursed woman with serpents for hair. Her gaze petrifies the living."
+    },
+    {
+      "name": "Mimic",
+      "cr": 2,
+      "xp": 450,
+      "type": "Monstrosity",
+      "size": "Medium",
+      "summary": "Shape-shifter that mimics furniture and objects. Often presented as an ambush predator."
+    },
+    {
+      "name": "Gelatinous Cube",
+      "cr": 4,
+      "xp": 1100,
+      "type": "Ooze",
+      "size": "Large",
+      "summary": "Transparent, cubic ooze that consumes everything in its path. Dungeon cleaner and predator."
+    },
+    {
+      "name": "Black Pudding",
+      "cr": 4,
+      "xp": 1100,
+      "type": "Ooze",
+      "size": "Large",
+      "summary": "Corrosive ooze that dissolves organic matter. Splits when damaged."
+    },
+    {
+      "name": "Rust Monster",
+      "cr": 0.5,
+      "xp": 100,
+      "type": "Monstrosity",
+      "size": "Small",
+      "summary": "Armored creature that oxidizes metal. Terrifying to adventurers with magical equipment."
+    },
+    {
+      "name": "Griffon",
+      "cr": 2,
+      "xp": 450,
+      "type": "Monstrosity",
+      "size": "Large",
+      "summary": "Eagle-headed lion with wings. Noble and intelligent creature; sometimes befriended."
+    },
+    {
+      "name": "Chimera",
+      "cr": 6,
+      "xp": 2300,
+      "type": "Monstrosity",
+      "size": "Large",
+      "summary": "Hybrid creature with lion body, goat head, and serpent tail. Fiercely territorial."
+    },
+    {
+      "name": "Hydra",
+      "cr": 8,
+      "xp": 3900,
+      "type": "Monstrosity",
+      "size": "Huge",
+      "summary": "Multi-headed serpent that regenerates severed heads. Legendary creature of swamps."
+    },
+    {
+      "name": "Medusa",
+      "cr": 6,
+      "xp": 2300,
+      "type": "Monstrosity",
+      "size": "Medium",
+      "summary": "Woman cursed with serpents for hair. Her petrifying gaze and serpent bite are deadly."
+    },
+    {
+      "name": "Troll",
+      "cr": 5,
+      "xp": 1800,
+      "type": "Giant",
+      "size": "Large",
+      "summary": "Regenerating giant with voracious hunger. Only fire and acid prevent its healing."
+    },
+    {
+      "name": "Hill Giant",
+      "cr": 5,
+      "xp": 1800,
+      "type": "Giant",
+      "size": "Huge",
+      "summary": "Largest of giants in many regions. Brutish and prone to raiding villages."
+    },
+    {
+      "name": "Fire Giant",
+      "cr": 9,
+      "xp": 5000,
+      "type": "Giant",
+      "size": "Huge",
+      "summary": "Masterful warrior dwelling in volcanic realms. Commands fire and leads armies."
+    },
+    {
+      "name": "Frost Giant",
+      "cr": 8,
+      "xp": 3900,
+      "type": "Giant",
+      "size": "Huge",
+      "summary": "Icy brutish giant from frozen lands. Immune to cold and commands respect."
+    },
+    {
+      "name": "Cyclops",
+      "cr": 6,
+      "xp": 2300,
+      "type": "Giant",
+      "size": "Huge",
+      "summary": "One-eyed giant of legendary strength and stubbornness. Often controls territory."
+    },
+    {
+      "name": "Pixie",
+      "cr": 0.25,
+      "xp": 50,
+      "type": "Fey",
+      "size": "Tiny",
+      "summary": "Diminutive fey creature with magical powers. Mischievous and whimsical."
+    },
+    {
+      "name": "Unicorn",
+      "cr": 4,
+      "xp": 1100,
+      "type": "Celestial",
+      "size": "Large",
+      "summary": "Noble magical horse with healing horn. Serves good and fights evil."
+    },
+    {
+      "name": "Pegasus",
+      "cr": 2,
+      "xp": 450,
+      "type": "Celestial",
+      "size": "Large",
+      "summary": "Winged horse of grace and beauty. Often serves heroes and good-aligned powers."
+    },
+    {
+      "name": "Phase Spider",
+      "cr": 3,
+      "xp": 700,
+      "type": "Monstrosity",
+      "size": "Large",
+      "summary": "Interdimensional spider that phases between planes. Difficult to kill."
+    },
+    {
+      "name": "Mind Flayer",
+      "cr": 3,
+      "xp": 700,
+      "type": "Aberration",
+      "size": "Medium",
+      "summary": "Tentacled alien creature with psychic powers. Commands thralls from Underdark cities."
+    },
+    {
+      "name": "Aboleth",
+      "cr": 10,
+      "xp": 5900,
+      "type": "Aberration",
+      "size": "Huge",
+      "summary": "Ancient slime lord dwelling in underground waters. Telepathic and manipulative."
+    },
+    {
+      "name": "Drow",
+      "cr": 0.25,
+      "xp": 50,
+      "type": "Humanoid",
+      "size": "Medium",
+      "summary": "Dark elf dwelling in the Underdark. Skilled fighter with magical leanings."
+    },
+    {
+      "name": "Drow Mage",
+      "cr": 4,
+      "xp": 1100,
+      "type": "Humanoid",
+      "size": "Medium",
+      "summary": "Powerful dark elf spellcaster. Commands magic and leads drow military forces."
+    },
+    {
+      "name": "Bugbear",
+      "cr": 1,
+      "xp": 200,
+      "type": "Humanoid",
+      "size": "Medium",
+      "summary": "Large goblinoid with feline features. Fierce and cruel, often leaders among goblins."
+    },
+    {
+      "name": "Gnoll",
+      "cr": 0.5,
+      "xp": 100,
+      "type": "Humanoid",
+      "size": "Medium",
+      "summary": "Hyena-headed humanoid prized for strength and ferocity. Often raids settlements."
+    },
+    {
+      "name": "Werewolf",
+      "cr": 3,
+      "xp": 700,
+      "type": "Humanoid",
+      "size": "Medium",
+      "summary": "Human who transforms into dire wolf form. Cursed by bite or dark magic."
+    },
+    {
+      "name": "Werebear",
+      "cr": 2,
+      "xp": 450,
+      "type": "Humanoid",
+      "size": "Medium",
+      "summary": "Human who transforms into giant bear. Stronger than werewolves, often noble."
+    },
+    {
+      "name": "Harpy",
+      "cr": 1,
+      "xp": 200,
+      "type": "Monstrosity",
+      "size": "Medium",
+      "summary": "Woman with bird wings and talons. Known for aerial combat and enchanting songs."
+    },
+    {
+      "name": "Owlbear",
+      "cr": 3,
+      "xp": 700,
+      "type": "Monstrosity",
+      "size": "Large",
+      "summary": "Fearsome hybrid of owl and bear. Possesses keen senses and devastating strength."
+    },
+    {
+      "name": "Dire Wolf",
+      "cr": 1,
+      "xp": 200,
+      "type": "Beast",
+      "size": "Large",
+      "summary": "Preternatural wolf the size of a horse. Cunning predator of the wilderness."
+    },
+    {
+      "name": "Wyvern",
+      "cr": 6,
+      "xp": 2300,
+      "type": "Dragon",
+      "size": "Large",
+      "summary": "Two-legged dragon with venomous tail sting. Territorial flier of mountain peaks."
+    },
+    {
+      "name": "Pseudodragon",
+      "cr": 0.25,
+      "xp": 50,
+      "type": "Dragon",
+      "size": "Tiny",
+      "summary": "Tiny dragonlike creature used as familiar by spellcasters. Venomous tail spike."
+    },
+    {
+      "name": "Nightmare",
+      "cr": 3,
+      "xp": 700,
+      "type": "Fiend",
+      "size": "Large",
+      "summary": "Demonic steed engulfed in smoke and flame. Carries infernal riders across planes."
+    },
+    {
+      "name": "Shadow",
+      "cr": 0.5,
+      "xp": 100,
+      "type": "Undead",
+      "size": "Medium",
+      "summary": "Incorporeal shade spawn from negative planes. Saps strength with touch."
+    },
+    {
+      "name": "Specter",
+      "cr": 1,
+      "xp": 200,
+      "type": "Undead",
+      "size": "Medium",
+      "summary": "Malevolent spirit of a fallen warrior. Possesses and drains life force."
+    },
+    {
+      "name": "Mummy Lord",
+      "cr": 15,
+      "xp": 13000,
+      "type": "Undead",
+      "size": "Medium",
+      "summary": "Powerful pharaoh-mummy risen from death. Commands undead minions and curses."
+    },
+    {
+      "name": "Ancient White Dragon",
+      "cr": 20,
+      "xp": 25000,
+      "type": "Dragon",
+      "size": "Gargantuan",
+      "summary": "Eldest of white dragons, dwelling in frozen wastelands. Brute force incarnate."
+    },
+    {
+      "name": "Ancient Gold Dragon",
+      "cr": 24,
+      "xp": 62000,
+      "type": "Dragon",
+      "size": "Gargantuan",
+      "summary": "Legendary dragon of good, rare and powerful. Champion of justice and nobility."
+    },
+    {
+      "name": "Lamia",
+      "cr": 4,
+      "xp": 1100,
+      "type": "Monstrosity",
+      "size": "Large",
+      "summary": "Woman with lion body below the waist. Seductive shape-shifter and manipulator."
+    },
+    {
+      "name": "Sphinx",
+      "cr": 17,
+      "xp": 18000,
+      "type": "Monstrosity",
+      "size": "Large",
+      "summary": "Legendary creature with feline body and humanoid torso. Keeper of secrets and riddles."
+    },
+    {
+      "name": "Roper",
+      "cr": 5,
+      "xp": 1800,
+      "type": "Monstrosity",
+      "size": "Large",
+      "summary": "Tentacled predator anchored to dungeon ceiling. Waits patiently for prey."
+    },
+    {
+      "name": "Purple Worm",
+      "cr": 15,
+      "xp": 13000,
+      "type": "Monstrosity",
+      "size": "Gargantuan",
+      "summary": "Enormous burrowing worm of the Underdark. Devours everything in its path."
+    },
+    {
+      "name": "Stirge",
+      "cr": 0.125,
+      "xp": 25,
+      "type": "Beast",
+      "size": "Tiny",
+      "summary": "Tiny bloodsucking creature resembling a mosquito. Often found in swarms."
+    },
+    {
+      "name": "Swarm of Rats",
+      "cr": 0.125,
+      "xp": 25,
+      "type": "Beast",
+      "size": "Small",
+      "summary": "Dangerous collective of rodents with collective intelligence. Spreads disease."
+    },
+    {
+      "name": "Swarm of Bats",
+      "cr": 0.25,
+      "xp": 50,
+      "type": "Beast",
+      "size": "Small",
+      "summary": "Coordinated swarm of flying mammals. Collective attacks overwhelm opponents."
+    },
+    {
+      "name": "Stone Golem",
+      "cr": 10,
+      "xp": 5900,
+      "type": "Construct",
+      "size": "Large",
+      "summary": "Magically animated stone guardian. Immune to magic and unstoppable in direct combat."
+    },
+    {
+      "name": "Iron Golem",
+      "cr": 16,
+      "xp": 15000,
+      "type": "Construct",
+      "size": "Large",
+      "summary": "Magical iron construct of immense power. Immune to most magic."
+    },
+    {
+      "name": "Clay Golem",
+      "cr": 9,
+      "xp": 5000,
+      "type": "Construct",
+      "size": "Large",
+      "summary": "Humanoid golem crafted from clay. Symbol on forehead controls its actions."
+    },
+    {
+      "name": "Flesh Golem",
+      "cr": 5,
+      "xp": 1800,
+      "type": "Construct",
+      "size": "Medium",
+      "summary": "Grotesque being stitched from corpse parts. Animated by lightning magic."
+    },
+    {
+      "name": "Homunculus",
+      "cr": 0,
+      "xp": 0,
+      "type": "Construct",
+      "size": "Tiny",
+      "summary": "Tiny magical construct crafted to serve its creator. Expendable familiar."
+    },
+    {
+      "name": "Invisible Stalker",
+      "cr": 8,
+      "xp": 3900,
+      "type": "Elemental",
+      "size": "Medium",
+      "summary": "Invisible air elemental conjured to hunt prey. Perfect killer."
+    },
+    {
+      "name": "Water Elemental",
+      "cr": 5,
+      "xp": 1800,
+      "type": "Elemental",
+      "size": "Large",
+      "summary": "Sentient mass of water manifested with destructive intent. Controls its aqueous form."
+    },
+    {
+      "name": "Fire Elemental",
+      "cr": 5,
+      "xp": 1800,
+      "type": "Elemental",
+      "size": "Large",
+      "summary": "Sentient flame that consumes and burns. Immune to fire damage."
+    },
+    {
+      "name": "Air Elemental",
+      "cr": 5,
+      "xp": 1800,
+      "type": "Elemental",
+      "size": "Large",
+      "summary": "Vortex of wind given form. Whirlwind of devastating force."
+    },
+    {
+      "name": "Earth Elemental",
+      "cr": 5,
+      "xp": 1800,
+      "type": "Elemental",
+      "size": "Large",
+      "summary": "Boulder-like creature of living stone. Submerges in earth effortlessly."
+    },
+    {
+      "name": "Giant Ape",
+      "cr": 7,
+      "xp": 2900,
+      "type": "Beast",
+      "size": "Gargantuan",
+      "summary": "Enormous primate with frightening intelligence and strength. Territorial and protective."
+    },
+    {
+      "name": "Ancient Green Dragon",
+      "cr": 22,
+      "xp": 41000,
+      "type": "Dragon",
+      "size": "Gargantuan",
+      "summary": "Master of deception and intrigue dwelling in deep forests. Schemes endlessly."
+    },
+    {
+      "name": "Ancient Blue Dragon",
+      "cr": 23,
+      "xp": 50000,
+      "type": "Dragon",
+      "size": "Gargantuan",
+      "summary": "Tyrant of lightning commanding vast aerial domain. Arrogant and deadly."
+    },
+    {
+      "name": "Erinyes",
+      "cr": 12,
+      "xp": 8400,
+      "type": "Fiend",
+      "size": "Medium",
+      "summary": "Infernal fury disguised as winged woman. Hunts targets relentlessly for revenge."
+    },
+    {
+      "name": "Oni",
+      "cr": 7,
+      "xp": 2900,
+      "type": "Giant",
+      "size": "Large",
+      "summary": "Japanese demon in humanoid form. Master of deception and illusion."
+    },
+    {
+      "name": "Couatl",
+      "cr": 4,
+      "xp": 1100,
+      "type": "Celestial",
+      "size": "Medium",
+      "summary": "Feathered serpent of good alignment. Protector of the innocent and wise counselor."
+    },
+    {
+      "name": "Demon Lord (Balor)",
+      "cr": 19,
+      "xp": 22000,
+      "type": "Fiend",
+      "size": "Huge",
+      "summary": "Towering demon of terrible might and malice. Commands legions and spreads destruction."
+    },
+    {
+      "name": "Yuan-ti Abomination",
+      "cr": 7,
+      "xp": 2900,
+      "type": "Monstrosity",
+      "size": "Large",
+      "summary": "Serpent-folk hybrid of a sorcerous cult. Blends blood magic with reptilian cunning."
+    },
+    {
+      "name": "Medusa",
+      "cr": 6,
+      "xp": 2300,
+      "type": "Monstrosity",
+      "size": "Medium",
+      "summary": "Woman with living serpents for hair whose gaze turns victims to stone."
+    },
+    {
+      "name": "Remorhaz",
+      "cr": 11,
+      "xp": 7200,
+      "type": "Monstrosity",
+      "size": "Gargantuan",
+      "summary": "Massive worm tunneling through frozen wastes. Hibernates for decades between hunts."
+    },
+    {
+      "name": "Tarrasque",
+      "cr": 30,
+      "xp": 155000,
+      "type": "Monstrosity",
+      "size": "Gargantuan",
+      "summary": "The ultimate doomsday beast. Nearly impossible to kill, sleeps for centuries."
+    },
+    {
+      "name": "Chimera",
+      "cr": 6,
+      "xp": 2300,
+      "type": "Monstrosity",
+      "size": "Large",
+      "summary": "Twisted monster with body of goat, head of lion and dragon. Breathes fire."
+    },
+    {
+      "name": "Hydra",
+      "cr": 8,
+      "xp": 3900,
+      "type": "Monstrosity",
+      "size": "Huge",
+      "summary": "Many-headed dragon with regenerating heads. Each severed head regrows as two."
+    },
+    {
+      "name": "Nagas (Ancient)",
+      "cr": 8,
+      "xp": 3900,
+      "type": "Monstrosity",
+      "size": "Large",
+      "summary": "Immortal serpents of serpentine form. Possess ancient magic and wisdom."
+    },
+    {
+      "name": "Clay Golem",
+      "cr": 9,
+      "xp": 5000,
+      "type": "Construct",
+      "size": "Large",
+      "summary": "Magically animated earthen construct. Indestructible but slow to respond."
+    },
+    {
+      "name": "Iron Golem",
+      "cr": 16,
+      "xp": 15000,
+      "type": "Construct",
+      "size": "Large",
+      "summary": "Massive metal guardian bound by ancient magic. Almost impossible to destroy."
+    },
+    {
+      "name": "Pit Fiend",
+      "cr": 20,
+      "xp": 25000,
+      "type": "Fiend",
+      "size": "Large",
+      "summary": "Infernal lord of devils commanding armies of lesser fiends. Ruthlessly evil."
+    },
+    {
+      "name": "Marid",
+      "cr": 11,
+      "xp": 7200,
+      "type": "Elemental",
+      "size": "Large",
+      "summary": "Genie of water wielding elemental power. Proud, temperamental, and noble."
+    }
+  ]
+}
